@@ -1,0 +1,185 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  min-height: 100vh;
+  width: 100%;
+}
+.mainContainer {
+  height: 500px;
+  width: 85%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 16px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 85%;
+}
+
+.divider {
+  position: absolute;
+  height: 90%;
+  width: 2px;
+  background-color: #c4c4c4;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.col {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.addOptions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.col > p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.uploadFile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  cursor: pointer;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  opacity: 0;
+}
+
+.uploadFile svg {
+  height: 60px;
+  width: 60px;
+}
+
+.paste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.paste:hover {
+  background-color: #f1f1f1;
+}
+
+.pasteContainer {
+  position: relative;
+  padding-block: 15px;
+  font-size: 16px;
+  line-height: 30px;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: #272727de;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.btn {
+  padding: 12px 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: #264653;
+  color: #fff;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.fileContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fileAdded {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  width: 70%;
+  margin-top: 14px;
+}
+
+.changeOption {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.changeOption .paste {
+  cursor: pointer;
+  border: none;
+  padding: unset;
+  width: fit-content;
+}
+
+.changeOption .uploadFile svg {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+.changeOption .input {
+  height: fit-content;
+  width: 50px;
+}
+
+.changeOption p {
+  display: none;
+}
+
+.uploadDocContainer {
+  background-color: #c4c4c4;
+  height: 100%;
+  width: 100%;
+}
+
+.preview {
+  background-color: #c4c4c4;
+  height: 270px !important;
+  width: 100%;
+  overflow: auto;
+}

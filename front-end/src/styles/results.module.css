@@ -1,0 +1,143 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  /* padding: 64px; */
+}
+
+.resultScore {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 14px;
+  position: fixed;
+  padding: 40px 64px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.scoreKeysContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.scoreKey {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  column-gap: 5px;
+}
+
+.scoreKey > div {
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+}
+
+.scoreKey > .high {
+  background-color: #205e61;
+  border: 3px solid #b9eddd;
+}
+.scoreKey > .average {
+  background-color: #2f58cd;
+  border: 2px solid #62cdff;
+}
+.scoreKey > .low {
+  background-color: #e04d01;
+  border: 2px solid #f7c04a;
+}
+
+.score {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: antiquewhite; */
+}
+
+.score::before {
+  content: "";
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.scoreValue {
+  position: relative;
+  color: #231c23;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.review {
+  min-height: 300px;
+  border: 1px solid #d0cfd0;
+  margin: 160px 64px 50px;
+  border-radius: 8px;
+  background-color: #eee;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 10px;
+}
+
+.paragraph .textIndex {
+  font-size: 15px;
+  line-height: 24px;
+  width: 46%;
+  font-weight: 500;
+}
+
+.paragraph p {
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.paragraphScore {
+  font-size: 12px;
+  font-weight: 500;
+  color: #231c23;
+}
+
+.highSimilarity p {
+  background-color: #abf3dd95;
+}
+.averageSimilarity p {
+  background-color: #62cdff24;
+}
+.lowSimilarity p {
+  background-color: #f7c04a2a;
+}
+
+.back {
+  position: fixed;
+  top: 64px;
+  right: 64px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #231c23;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 20;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
