@@ -4,7 +4,7 @@ import { AddDocs } from "../components/addDocs";
 
 import style from "../styles/home.module.css";
 import axios from "axios";
-import SimilaritiesResults from "./similarityResults";
+import SimilaritiesResults from "../components/similarityResults";
 import Loader from "../components/loader";
 import Alerts from "../components/alert";
 
