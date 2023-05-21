@@ -7,10 +7,10 @@ export const PasteContainer = ({ pastedText, handlePasteText, docsNum }) => {
     <textarea
       className={style.pasteContainer}
       value={text}
-      onChange={(e) => {
+      onInput={(e) => {
         setText(e.target.value);
         handlePasteText({
-          file: text,
+          file: e.target.value,
           docType: "plainText",
           docsNum: docsNum,
         });

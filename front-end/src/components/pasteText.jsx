@@ -7,7 +7,7 @@ export const PasteText = ({ handlePasteText, docsNum }) => {
       onClick={() => {
         navigator.clipboard.readText().then((cliptext) => {
           handlePasteText({
-            file: cliptext,
+            file: "",
             docType: "plainText",
             docsNum: docsNum,
           });
